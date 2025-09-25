@@ -43,6 +43,12 @@ public class LogInTest extends BaseTest {
         Assert.assertEquals("Your email address or password was incorrect.", logInPage.errorMessageLocator);
     }
 
+    @Test
+    public void exampleTestInvalidPassword() {
+        homePage.clickOnLogInButton();
+        logInPage.loginFunctionality("ivanans@hotmail.com", "swarovskiPass789");
+
+        Assert.assertEquals("Your email address or password was incorrect.", logInPage.errorMessageLocator);
 
 
 
