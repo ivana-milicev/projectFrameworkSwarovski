@@ -6,7 +6,11 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+<<<<<<< HEAD
 import org.openqa.selenium.edge.EdgeDriver;
+=======
+import org.openqa.selenium.firefox.FirefoxDriver;
+>>>>>>> bf4f0e15c5b390277cf0ea3ad0e296eb16fb3d3d
 import pages.BasePage;
 
 import java.time.Duration;
@@ -21,6 +25,7 @@ public class BaseTest {
 
     @BeforeClass
     public static void beforeClass() throws Exception {
+
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
